@@ -1,0 +1,292 @@
+{
+  "guild_name": "Перекуп Калькулятор",
+  "note": "Одна роль на каждый канал + роли источника входа (Telegram/EXE/сайт) + персонал и особые роли. Порядок групп в файле = порядок ролей в иерархии Discord сверху вниз (команда --order раскладывает роли именно так). Поля: name — имя роли, color — HEX, mentionable — можно ли пинговать, hoist — показывать отдельным блоком в списке, channel — канал, которому служит роль, purpose — зачем она нужна. Поле self_assign: true — роль можно выдавать кнопкой в панели подписок (Discord-бот в PerekupDisBot).",
+  "groups": [
+    {
+      "category": "Персонал",
+      "roles": [
+        {
+          "name": "👑 Владелец",
+          "color": "#FEE75C",
+          "mentionable": false,
+          "hoist": true,
+          "channel": null,
+          "purpose": "Владелец проекта — самая верхняя роль. Доступ к категории «Администрация»; администратора выдай вручную."
+        },
+        {
+          "name": "🛡️ Модератор",
+          "color": "#23A55A",
+          "mentionable": true,
+          "hoist": true,
+          "channel": null,
+          "purpose": "Команда порядка: кик, мут, чистка чата. Доступ к «Администрации»; права выдаются вручную."
+        },
+        {
+          "name": "🤖 Бот",
+          "color": "#7289DA",
+          "mentionable": false,
+          "hoist": false,
+          "channel": null,
+          "purpose": "Роль для ботов сервера (калькулятор, уведомления). Людям не выдавать."
+        }
+      ]
+    },
+    {
+      "category": "Особые и заслуги",
+      "roles": [
+        {
+          "name": "💜 Бустер",
+          "color": "#FF73FA",
+          "mentionable": true,
+          "hoist": true,
+          "channel": "🎁 бусты сервера",
+          "purpose": "Забустил сервер: спасибо в канале бустов, отдельный цвет и место в списке участников."
+        },
+        {
+          "name": "🏆 Топ-перекуп",
+          "color": "#DAA520",
+          "mentionable": true,
+          "hoist": false,
+          "channel": null,
+          "purpose": "Топ сезона по данным калькулятора: лучшая прибыль со скупок."
+        },
+        {
+          "name": "🚀 Первопроходец",
+          "color": "#FF7F50",
+          "mentionable": false,
+          "hoist": false,
+          "channel": null,
+          "purpose": "Вошёл в первую сотню участников — вечный статус."
+        },
+        {
+          "name": "🎬 Контентмейкер",
+          "color": "#A29BFE",
+          "mentionable": true,
+          "hoist": false,
+          "channel": null,
+          "purpose": "Стримит или снимает видео про перекуп. Пинг для коллабов и промо."
+        },
+        {
+          "name": "🧮 Протестировал калькулятор",
+          "color": "#45B7D1",
+          "mentionable": true,
+          "hoist": false,
+          "channel": null,
+          "purpose": "Погонял бета-версию калькулятора и прислал фидбек — пинг о новых тестах."
+        },
+        {
+          "name": "🏅 Оставил отзыв",
+          "color": "#FFC300",
+          "mentionable": false,
+          "hoist": false,
+          "channel": null,
+          "purpose": "Написал отзыв в #отзывы — попадает в подборку достижений."
+        }
+      ]
+    },
+    {
+      "category": "Источник входа",
+      "roles": [
+        {
+          "name": "📱 Из Telegram",
+          "color": "#229ED9",
+          "mentionable": false,
+          "hoist": false,
+          "channel": null,
+          "purpose": "Пришёл из Telegram-бота или Mini App. Выдаётся по инвайт-ссылке из Telegram или вручную."
+        },
+        {
+          "name": "🖥️ Из EXE",
+          "color": "#0078D4",
+          "mentionable": false,
+          "hoist": false,
+          "channel": null,
+          "purpose": "Пришёл из EXE-приложения калькулятора. Выдаётся по инвайт-ссылке из приложения или вручную."
+        },
+        {
+          "name": "🌐 С сайта",
+          "color": "#16A085",
+          "mentionable": false,
+          "hoist": false,
+          "channel": null,
+          "purpose": "Пришёл с сайта или веб-версии калькулятора. Выдаётся по инвайт-ссылке с сайта или вручную."
+        }
+      ]
+    },
+    {
+      "category": "Мероприятия",
+      "roles": [
+        {
+          "name": "📅 Мероприятия",
+          "color": "#EC7063",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "📅 мероприятия",
+          "purpose": "Афиша сервера: ивенты, гонки, розыгрыши, скупки. Пинг за день и перед стартом.",
+          "self_assign": true
+        }
+      ]
+    },
+    {
+      "category": "Основные каналы",
+      "roles": [
+        {
+          "name": "📰 Новости",
+          "color": "#E74C3C",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "📰 новости",
+          "purpose": "Пинг-подписка на #новости: жизнь проекта и сервера.",
+          "self_assign": true
+        },
+        {
+          "name": "📺 Медиа-новости",
+          "color": "#E67E22",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "📺 медиа-новости",
+          "purpose": "Пинг-подписка на #медиа-новости: ролики, обзоры, медиа-дайджесты.",
+          "self_assign": true
+        },
+        {
+          "name": "🔔 Обновления",
+          "color": "#F39C12",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "🔔 обновления",
+          "purpose": "Пинг-подписка на #обновления: новые версии калькулятора и список изменений.",
+          "self_assign": true
+        },
+        {
+          "name": "📲 Уставка",
+          "color": "#9B59B6",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "📲 уставка",
+          "purpose": "Пинг-подписка на #уставка: обновления уставки и расценок перекупа.",
+          "self_assign": true
+        }
+      ]
+    },
+    {
+      "category": "Community",
+      "roles": [
+        {
+          "name": "⭐ Отзывы",
+          "color": "#F5B041",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "⭐ отзывы",
+          "purpose": "Пинг-подписка на #отзывы: новые отзывы о калькуляторе и перекупах.",
+          "self_assign": true
+        },
+        {
+          "name": "💡 Идеи",
+          "color": "#F7DC6F",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "💡 идеи",
+          "purpose": "Авторы предложений: пинг в #идеи при обсуждении новых фич.",
+          "self_assign": true
+        },
+        {
+          "name": "🧠 Хелпер",
+          "color": "#1ABC9C",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "🧠 помощь",
+          "purpose": "Помощники: пинг в #помощь, когда новичку нужен живой ответ."
+        },
+        {
+          "name": "☕ Чат",
+          "color": "#8D6E63",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "☕ чат",
+          "purpose": "Завсегдатаи #чат: пинг для общих сборов и движух.",
+          "self_assign": true
+        },
+        {
+          "name": "🏷️ Скины и мемы",
+          "color": "#E84393",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "🏷️ скины-и-мемы",
+          "purpose": "Пинг-подписка на #скины-и-мемы: свежие скины и мемы.",
+          "self_assign": true
+        },
+        {
+          "name": "📎 Баг-хантер",
+          "color": "#95A5A6",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "📎 баги",
+          "purpose": "Нашёл баг — получил роль: пинг в #баги о новых поломках и тестах.",
+          "self_assign": true
+        }
+      ]
+    },
+    {
+      "category": "Голосовые каналы",
+      "roles": [
+        {
+          "name": "🔊 Войс-1 · Лобби",
+          "color": "#5865F2",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "🔊 войс-1",
+          "purpose": "Пинг лобби #войс-1: посиделки, кино, разговоры ни о чём.",
+          "self_assign": true
+        },
+        {
+          "name": "🎧 Войс-2 · Гонки",
+          "color": "#7B68EE",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "🎧 войс-2",
+          "purpose": "Пинг #войс-2: гонки и заезды в GTA 5 RP.",
+          "self_assign": true
+        },
+        {
+          "name": "🎤 Войс-3 · Стрим",
+          "color": "#8E44AD",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "🎤 войс-3",
+          "purpose": "Пинг #войс-3: стримы и записи, микрофон обязателен.",
+          "self_assign": true
+        },
+        {
+          "name": "📢 Войс-4 · Скупка",
+          "color": "#EB459E",
+          "mentionable": true,
+          "hoist": false,
+          "channel": "📢 войс-4",
+          "purpose": "Пинг #войс-4: крупные скупки и торговые созвоны перекупов.",
+          "self_assign": true
+        }
+      ]
+    },
+    {
+      "category": "Базовые роли",
+      "roles": [
+        {
+          "name": "✅ Знает правила",
+          "color": "#2ECC71",
+          "mentionable": false,
+          "hoist": false,
+          "channel": "📜 правила",
+          "purpose": "Верификация: выдаётся после прочтения правил, открывает закрытые Community-каналы."
+        },
+        {
+          "name": "👋 Новичок",
+          "color": "#F1C40F",
+          "mentionable": false,
+          "hoist": false,
+          "channel": "💬 welcom",
+          "purpose": "Метка новичка: выдаётся при входе, чтобы видеть, кого приветствовать в #welcom."
+        }
+      ]
+    }
+  ]
+}

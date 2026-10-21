@@ -1,0 +1,121 @@
+{
+  "guild_id": "1559945024114794586",
+  "channels": {
+    "welcome": "1559945025607962628",
+    "rules": "1559946990165426266",
+    "roles": "1562462672233173085",
+    "updates": "1559946867335241728",
+    "modlog": "лог-модерации",
+    "voice_hub": "➕・создать-войс",
+    "voice_temp_category": "🔊 Временные комнаты"
+  },
+  "roles": {
+    "unverified": "👋 Новичок",
+    "verified": "✅ Знает правила",
+    "sources": {
+      "telegram": "📱 Из Telegram",
+      "exe": "🖥️ Из EXE",
+      "site": "🌐 С сайта"
+    }
+  },
+  "subscriptions": [
+    {
+      "key": "news",
+      "role": "📰 Новости",
+      "label": "Новости",
+      "emoji": "📰",
+      "group": "Новости и обновления"
+    },
+    {
+      "key": "media",
+      "role": "📺 Медиа-новости",
+      "label": "Медиа",
+      "emoji": "📺",
+      "group": "Новости и обновления"
+    },
+    {
+      "key": "updates",
+      "role": "🔔 Обновления",
+      "label": "Обновления",
+      "emoji": "🔔",
+      "group": "Новости и обновления"
+    },
+    {
+      "key": "ustavka",
+      "role": "📲 Уставка",
+      "label": "Уставка",
+      "emoji": "📲",
+      "group": "Новости и обновления"
+    },
+    {
+      "key": "events",
+      "role": "📅 Мероприятия",
+      "label": "Мероприятия",
+      "emoji": "📅",
+      "group": "Мероприятия"
+    },
+    {
+      "key": "reviews",
+      "role": "⭐ Отзывы",
+      "label": "Отзывы",
+      "emoji": "⭐",
+      "group": "Community"
+    },
+    {
+      "key": "ideas",
+      "role": "💡 Идеи",
+      "label": "Идеи",
+      "emoji": "💡",
+      "group": "Community"
+    },
+    {
+      "key": "chat",
+      "role": "☕ Чат",
+      "label": "Чат",
+      "emoji": "☕",
+      "group": "Community"
+    },
+    {
+      "key": "skins",
+      "role": "🏷️ Скины и мемы",
+      "label": "Скины",
+      "emoji": "🏷️",
+      "group": "Community"
+    },
+    {
+      "key": "bugs",
+      "role": "📎 Баг-хантер",
+      "label": "Баги",
+      "emoji": "📎",
+      "group": "Community"
+    },
+    {
+      "key": "voice1",
+      "role": "🔊 Войс-1 · Лобби",
+      "label": "Войс-1",
+      "emoji": "🔊",
+      "group": "Голосовые комнаты"
+    },
+    {
+      "key": "voice2",
+      "role": "🎧 Войс-2 · Гонки",
+      "label": "Войс-2",
+      "emoji": "🎧",
+      "group": "Голосовые комнаты"
+    },
+    {
+      "key": "voice3",
+      "role": "🎤 Войс-3 · Стрим",
+      "label": "Войс-3",
+      "emoji": "🎤",
+      "group": "Голосовые комнаты"
+    },
+    {
+      "key": "voice4",
+      "role": "📢 Войс-4 · Скупка",
+      "label": "Войс-4",
+      "emoji": "📢",
+      "group": "Голосовые комнаты"
+    }
+  ]
+}

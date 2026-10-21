@@ -1,0 +1,44 @@
+{
+  "guild_id": "1559945024114794586",
+  "channel_id": "1559945025607962628",
+  "created_at": "2026-10-21T13:49:02+00:00",
+  "updated_at": "2026-10-21T13:49:02+00:00",
+  "invites": [
+    {
+      "key": "telegram",
+      "label": "Telegram",
+      "code": "UU2gNQe7C6",
+      "url": "https://discord.gg/UU2gNQe7C6",
+      "role": "📱 Из Telegram",
+      "uses": 0,
+      "channel_id": "1559945025607962628"
+    },
+    {
+      "key": "exe",
+      "label": "EXE",
+      "code": "rCA7UreKWE",
+      "url": "https://discord.gg/rCA7UreKWE",
+      "role": "🖥️ Из EXE",
+      "uses": 0,
+      "channel_id": "1559945025607962628"
+    },
+    {
+      "key": "site",
+      "label": "Сайт",
+      "code": "mw7xXThNUh",
+      "url": "https://discord.gg/mw7xXThNUh",
+      "role": "🌐 С сайта",
+      "uses": 0,
+      "channel_id": "1559945025607962628"
+    },
+    {
+      "key": "default",
+      "label": "Обычная ссылка",
+      "code": "maCdppFm3E",
+      "url": "https://discord.gg/maCdppFm3E",
+      "role": null,
+      "uses": 0,
+      "channel_id": "1559945025607962628"
+    }
+  ]
+}

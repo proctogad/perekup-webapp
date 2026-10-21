@@ -1,0 +1,53 @@
+# Уведомление в Discord о новом GitHub Release.
+#
+# 1. Скопируй файл в `.github/workflows/discord-release.yml`.
+# 2. В GitHub: Settings → Secrets and variables → Actions → New repository secret.
+#    Имя: DISCORD_WEBHOOK, значение: URL вебхука из `post_update.py --create-webhook --apply`.
+# 3. Опубликуй релиз на GitHub — бот пришлёт анонс в #обновления.
+#
+# Это именно уведомление о релизе, а не запуск Discord-бота:
+# gateway-бот на GitHub Actions 24/7 не живёт.
+
+name: Discord Release Notification
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send release to Discord
+        uses: actions/github-script@v7
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          script: |
+            const release = context.payload.release;
+            const body = (release.body || "Новая версия уже доступна.").slice(0, 3500);
+            const response = await fetch(process.env.DISCORD_WEBHOOK, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                username: "Perekup Updates",
+                embeds: [{
+                  title: `🚀 ${release.name || release.tag_name}`.slice(0, 256),
+                  url: release.html_url,
+                  description: body,
+                  color: 0xF39C12,
+                  fields: [
+                    { name: "Версия", value: release.tag_name || "—", inline: true },
+                    { name: "Релиз", value: `[открыть на GitHub](${release.html_url})`, inline: true }
+                  ],
+                  footer: { text: "GitHub Releases" },
+                  timestamp: new Date().toISOString()
+                }]
+              })
+            });
+            if (!response.ok) {
+              core.setFailed(`Discord webhook: ${response.status} ${await response.text()}`);
+            }

@@ -1,0 +1,19 @@
+# Секреты и локальное состояние
+.env
+**/.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Discord-бот: состояние панелей создаётся на сервере
+PerekupDisBot/state.json
+
+# Логи и временные файлы
+*.log
+.DS_Store
+Thumbs.db

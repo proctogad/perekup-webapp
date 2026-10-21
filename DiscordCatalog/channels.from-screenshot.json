@@ -1,0 +1,73 @@
+{
+  "guild": {
+    "id": null,
+    "name": "ГТА5РП | Перекуп Калькулятор",
+    "icon": null
+  },
+  "generated_at": "2026-10-16 (вручную, по скриншоту)",
+  "note": "Названия и эмодзи переписаны по скриншоту глазами. ID и точные типы не извлекаются из картинки — заполните их, запустив catalog_channels.py с токеном бота. Пункты без категории сверху — возможно, это каналы, возможно, категории.",
+  "categories": [
+    {
+      "id": null,
+      "name": "Основные каналы",
+      "type": 4,
+      "type_name": "категория",
+      "position": 0,
+      "nsfw": false,
+      "channels": [
+        { "id": null, "name": "💬 welcom", "type": 0, "type_name": "текстовый", "position": 0, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "📰 новости", "type": 0, "type_name": "текстовый", "position": 1, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "📺 медиа-новости", "type": 0, "type_name": "текстовый", "position": 2, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "🔔 обновления", "type": 0, "type_name": "текстовый", "position": 3, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "📲 уставка", "type": 0, "type_name": "текстовый", "position": 4, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "📜 правила", "type": 0, "type_name": "текстовый", "position": 5, "parent_id": null, "nsfw": false }
+      ]
+    },
+    {
+      "id": null,
+      "name": "Community",
+      "type": 4,
+      "type_name": "категория",
+      "position": 1,
+      "nsfw": false,
+      "channels": [
+        { "id": null, "name": "⭐ отзывы", "type": 0, "type_name": "текстовый", "position": 0, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "💡 идеи", "type": 0, "type_name": "текстовый", "position": 1, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "🧠 помощь", "type": 0, "type_name": "текстовый", "position": 2, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "☕ чат", "type": 0, "type_name": "текстовый", "position": 3, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "🏷️ скины-и-мемы", "type": 0, "type_name": "текстовый", "position": 4, "parent_id": null, "nsfw": false },
+        { "id": null, "name": "📎 баги", "type": 0, "type_name": "текстовый", "position": 5, "parent_id": null, "nsfw": false }
+      ]
+    },
+    {
+      "id": null,
+      "name": "Голосовые каналы",
+      "type": 4,
+      "type_name": "категория",
+      "position": 2,
+      "nsfw": false,
+      "channels": [
+        { "id": null, "name": "🔊 войс-1", "type": 1, "type_name": "голосовой", "position": 0, "parent_id": null, "nsfw": false, "bitrate": 64000, "user_limit": 0 },
+        { "id": null, "name": "🎧 войс-2", "type": 1, "type_name": "голосовой", "position": 1, "parent_id": null, "nsfw": false, "bitrate": 64000, "user_limit": 0 },
+        { "id": null, "name": "🎤 войс-3", "type": 1, "type_name": "голосовой", "position": 2, "parent_id": null, "nsfw": false, "bitrate": 64000, "user_limit": 0 },
+        { "id": null, "name": "📢 войс-4", "type": 1, "type_name": "голосовой", "position": 3, "parent_id": null, "nsfw": false, "bitrate": 64000, "user_limit": 0 }
+      ]
+    },
+    {
+      "id": null,
+      "name": "Администрация",
+      "type": 4,
+      "type_name": "категория",
+      "position": 3,
+      "nsfw": false,
+      "channels": [
+        { "id": null, "name": "1", "type": 0, "type_name": "текстовый", "position": 0, "parent_id": null, "nsfw": false, "note": "имя временное, предлагается #админ-чат" },
+        { "id": null, "name": "1", "type": 1, "type_name": "голосовой", "position": 1, "parent_id": null, "nsfw": false, "note": "имя временное, предлагается «🔊 Админ-войс»" }
+      ]
+    }
+  ],
+  "uncategorized": [
+    { "id": null, "name": "📅 Мероприятия", "type": null, "type_name": "не определён (канал или категория)", "position": 0, "parent_id": null, "nsfw": false },
+    { "id": null, "name": "🎁 Бусты сервера", "type": null, "type_name": "не определён (канал или категория)", "position": 1, "parent_id": null, "nsfw": false }
+  ]
+}
